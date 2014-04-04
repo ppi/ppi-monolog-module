@@ -1,0 +1,25 @@
+{
+    "name": "ppi/monolog-module",
+    "description": "Monolog module for PPI2",
+    "keywords": ["ppi", "log", "logging"],
+    "homepage": "https://github.com/ppi/ppi-monolog-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vítor Brandão",
+            "email": "vitor@ppi.io"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/ppi",
+        "issues": "https://github.com/ppi/ppi-monolog-module/issues"
+    },
+    "require": {
+        "ppi/framework": "dev-develop"
+    },
+    "autoload": {
+        "psr-0": { "PPI\\MonologModule": "" }
+    },
+    "target-dir": "PPI/MonologModule",
+    "minimum-stability": "dev"
+}
