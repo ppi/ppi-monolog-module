@@ -16,7 +16,7 @@
     },
     "require": {
         "ppi/framework": "dev-develop",
-        "monolog/monolog": "~1.3"
+        "monolog/monolog": "~1.8"
     },
     "autoload": {
         "psr-0": { "PPI\\MonologModule": "" }

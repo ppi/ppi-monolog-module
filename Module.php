@@ -13,6 +13,7 @@ namespace PPI\MonologModule;
 
 use PPI\Autoload;
 use PPI\Module\AbstractModule;
+use PPI\MonologModule\ServiceManager\MonologConfig;
 
 /**
  * PPI Monolog Module.
@@ -24,7 +25,7 @@ class Module extends AbstractModule
     const VERSION = '0.0.1-DEV';
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function init($e)
     {
@@ -32,18 +33,31 @@ class Module extends AbstractModule
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getName()
     {
-        return 'PPIMonologModule';
+        return 'MonologModule';
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getConfig()
     {
-        return array();
+        return include __DIR__ . '/resources/config/monolog.php';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getServiceConfig()
+    {
+        return new MonologConfig();
+    }
+
+    public function getRouteConfig()
+    {
+        return array('routez' => 1);
     }
 }
