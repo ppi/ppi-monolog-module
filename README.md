@@ -1,6 +1,8 @@
 PPI Monolog Module
 ==================
 
+[![Join the chat at https://gitter.im/ppi/ppi-monolog-module](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ppi/ppi-monolog-module?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [@php]:     http://php.net/         "PHP: Hypertext Preprocessor"
 [@ppi]:     http://ppi.io/          "PPI Framework - The PHP Meta Framework!"
 [@monolog]: https://github.com/Seldaek/monolog  "Sends your logs to files, sockets, inboxes, databases and various web services"
